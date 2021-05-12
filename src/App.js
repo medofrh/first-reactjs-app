@@ -1,8 +1,10 @@
 import './App.css';
 import {Navbar, NavbarBrand} from 'reactstrap';
 import Menu from './components/menuComponent';
+import { dishes } from './shared/dishes';
 
 function App() {
+  
   return (
     <div>
       <Navbar dark color="primary">
@@ -10,7 +12,7 @@ function App() {
           <NavbarBrand href="/">MeDo</NavbarBrand>
         </div>
       </Navbar>
-      <Menu />
+      <Menu dishes={dishes}/>
     </div>
   );
 }
